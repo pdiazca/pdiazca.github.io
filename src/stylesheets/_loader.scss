@@ -1,0 +1,47 @@
+.loading-container {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  z-index: 900;
+    
+  > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  p {
+    font-size: 34px;
+    color: #ECBE13;
+    will-change: transform;
+    animation: rotate 1.5s infinite;
+  }
+  
+  span {
+    display: block;
+    margin: 100px;
+    font-size: 24px;
+    color: #343445;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+      color: #ECBE13;
+    }
+    30% {
+      transform: rotate(360deg);
+      color: #343445;
+    }
+    100% {
+      transform: rotate(0deg);
+      color: #ECBE13;
+    }
+  }
+}
