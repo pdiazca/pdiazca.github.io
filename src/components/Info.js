@@ -19,7 +19,7 @@ class Info extends React.Component {
         this.setState({
             skillListOne: globalData.globalData.skillsListOne,
             skillListTwo: globalData.globalData.skillsListTwo,
-            linkText: "See More?",
+            linkText: "Read More?",
             info: globalData.globalData.info.one
         })
     }

@@ -18,15 +18,14 @@ class Work extends React.Component {
                 <section className="header-description clearfix">
                     {workData.work.map((item, key) =>
                         <section className="bit clearfix work-bit" key={key}>
-                            <a href={item.slug} data-url={item.slug} className="modal-trigger bit-link">{item.name}</a>             
+                            <Link to={item.slug} className="bit-link">{item.name}</Link>            
                             <div className="bit-tags clearfix">
                                 {item.tags.map((tags, key) =>
                                     <span key={key}>{tags}</span>
                                 )}
                             </div>
                             <p>{item.snippet}</p>
-                            {/* <a href={item.slug} data-url={item.slug} class="read-more-link">Read More</a> */}
-                            <Link to={item.slug} data-url={item.slug} class="read-more-link">About</Link>
+                            <Link to={item.slug} data-url={item.slug} class="read-more-link">Read More</Link>
                         </section>
                     )}
                 </section>

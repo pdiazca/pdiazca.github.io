@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
 import workData from '../data/work'
@@ -80,7 +81,9 @@ class WorkContent extends React.Component {
                                     source={this.state.selectedWork}
                                     escapeHtml={false}
                                 />
-                                <p class="center-text"><a href="/#work">Back to Case Studies</a></p>
+                                <p class="center-text">
+                                    <Link to="/#work">Back to Case Studies</Link>
+                                </p>
                             </div>
                         </div>
                     </div>
