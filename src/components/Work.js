@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import SectionTitle from './SectionTitle'
 import workData from '../data/work'
 
@@ -24,7 +25,8 @@ class Work extends React.Component {
                                 )}
                             </div>
                             <p>{item.snippet}</p>
-                            <a href={item.slug} data-url={item.slug} class="read-more-link">Read More</a>
+                            {/* <a href={item.slug} data-url={item.slug} class="read-more-link">Read More</a> */}
+                            <Link to={item.slug} data-url={item.slug} class="read-more-link">About</Link>
                         </section>
                     )}
                 </section>
