@@ -14,6 +14,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
+import {HashRouter} from 'react-router-dom'
 import './index.css';
 import App from './App';
 import WorkPage from './components/WorkPage';
@@ -21,13 +22,13 @@ import Ninja from './components/Ninja';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
-  <Router basename={process.env.PUBLIC_URL}>
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <div>
       <Route exact path="/" component={App} />
       <Route exact path="/:slug" component={WorkPage} />
       <Route exact path="/ninja/iamota" component={Ninja} />
     </div>
-  </Router>
+  </HashRouter>
 )
 
 ReactDOM.render(routing, document.getElementById('root'))
