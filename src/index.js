@@ -17,6 +17,7 @@ import { Route, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import WorkPage from './components/WorkPage';
+import Ninja from './components/Ninja';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
@@ -24,6 +25,7 @@ const routing = (
     <div>
       <Route exact path="/" component={App} />
       <Route exact path="/:slug" component={WorkPage} />
+      <Route exact path="/ninja/iamota" component={Ninja} />
     </div>
   </Router>
 )
