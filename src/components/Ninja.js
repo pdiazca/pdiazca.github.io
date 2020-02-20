@@ -111,7 +111,7 @@ class Ninja extends React.Component {
                             
                             <div className="cl-next">
                                 <p className="cl-next-info">
-                                iamota calls Pablo at 778.883.9206 for an interview, <br/>
+                                <span className="cl-capitalize">{this.props.match.params.slug}</span> calls Pablo at 778.883.9206 for an interview, <br/>
                                 <span className="cl-bold">You won't believe what happens next.</span>
                                 </p>
                             </div>

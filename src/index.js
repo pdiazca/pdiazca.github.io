@@ -26,7 +26,7 @@ const routing = (
     <div>
       <Route exact path="/" component={App} />
       <Route exact path="/:slug" component={WorkPage} />
-      <Route exact path="/ninja/iamota" component={Ninja} />
+      <Route exact path="/ninja/:slug" component={Ninja} />
     </div>
   </HashRouter>
 )

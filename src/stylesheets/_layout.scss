@@ -693,6 +693,14 @@ $cl-font-family: 'Ubuntu', Helvetica, Arial, serif;
     left: 10px;
     font-weight: 700;
   }
+
+  .cl-bold {
+    font-weight: bold;
+  }
+  
+  .cl-capitalize {
+    text-transform: capitalize;
+  }
 }
 
 
