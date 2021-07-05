@@ -7,7 +7,7 @@ export default {
         info: {
             one: "I am a <span class='bold'>UI/UX Designer and Developer</span> with 3+ years of hands-on experience crafting visual design and user experiences for websites, mobile & SaaS applications.",
             two: "Currently pixel pushing at <a href='http://pnimedia.com'>PNI Digital Media</a>. A proud alumni of <span class='bold'>CodeCore</span> and <span class='bold'>RED Academy</span>.",
-            three: 'Outside the internet, I love to play golf <span role="img" aria-label="golf">🏌️</span>, <span role="img" aria-label="bike">🚲</span>  around Trout Lake and play board games <span role="img" aria-label="dice">🎲</span>.'
+            three: 'Outside the internet, I love to play golf <span role="img" aria-label="golf">🏌️</span>, <span role="img" aria-label="bike">🚲</span>  around Squamish and play board games <span role="img" aria-label="dice">🎲</span>.'
         },
         footerMessage: "I’d love to hear from you! Feel free to send me a message to <a href='mailto:pablo@pdiaz.ca'>pablo@pdiaz.ca.</a>",
         socialLinks: [{

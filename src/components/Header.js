@@ -16,9 +16,8 @@ class Header extends React.Component {
                 PABLO DIAZ <span>UI.UX.DEV</span>
             </a>
                 <nav>
-                <a href="/#work">Case Studies</a>
-                <a href="/assets/pablodiaz-resume-2019.pdf">Resume</a>
-                <a href="mailto:pablo@pdiaz.ca">Contact</a>
+                    <a href="/assets/pablo-resume-2021.pdf">Resume</a>
+                    <a href="mailto:pablo@pdiaz.ca">Contact</a>
                 </nav>
             </header>
         )
