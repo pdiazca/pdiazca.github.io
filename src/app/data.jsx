@@ -17,7 +17,7 @@ export const socialData = [
     {
       id: 1,
       name: "mail",
-      url: "mailto: flying.circuss@gmail.com",
+      url: "mailto: pablodiazdev@proton.me",
     },
     {
       id: 2,
