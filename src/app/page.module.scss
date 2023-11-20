@@ -1,0 +1,52 @@
+@import './globalVariables.scss';
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: flex;
+
+  @media screen and (max-width: $tablet) {
+    max-width: 80%;
+    display: block;
+  }
+
+  @media screen and (max-width: $small) {
+    max-width: 90%;
+    display: block;
+  }
+}
+
+.aside {
+  margin-top: 6rem;
+  flex: 1;
+
+  @media screen and (max-width: $tablet) {
+    margin-top: 3rem;
+  }
+
+  .aboutMe {
+    margin-bottom: 5rem;
+
+    a {
+      color: $highlight;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      display: none;
+  
+      @media screen and (max-width: $tablet) {
+        display: block;
+      }
+    }
+  }
+
+  a {
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      color: $highlight;
+    }
+  }
+}

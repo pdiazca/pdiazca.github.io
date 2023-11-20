@@ -1,0 +1,72 @@
+@import '../../globalVariables.scss';
+
+.header {
+  width: 45%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  padding: 5rem 2.5rem 0 0;
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 3rem 0 0;
+  }
+}
+
+.content {
+  padding-top: 1rem;
+
+  p {
+    padding-right: 4rem;
+  }
+
+  a.resumeLink {
+    color: $highlight;
+    font-weight: 700;
+
+    span {
+      transform: translateX(-10px);
+      display: inline-block;
+      opacity: 0;
+      color: $highlight;
+      transition: all 0.1s ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
+      color: $highlight;
+
+      span {
+        opacity: 1;
+        transform: translateX(10px)
+      }
+    }
+  }
+}
+
+.socialLinks {
+  display: flex;
+  gap: 2rem;
+  margin-top: 7rem;
+
+  @media screen and (max-width: $tablet) {
+    margin-top: 2rem;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    font-size: 1.5rem;
+    transition: all 0.2s linear;
+
+    &:hover,
+    &:focus {
+      color: $highlight;
+    }
+  }
+}
