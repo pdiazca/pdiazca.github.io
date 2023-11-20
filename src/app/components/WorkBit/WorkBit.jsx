@@ -61,7 +61,9 @@ export default function WorkBit({
             <>
             {title}
             <span className={styles.company}> - {company}</span>
-            <span className={clsx("material-symbols-outlined", styles.iconLink)}>trending_flat</span>
+              <span className={clsx(styles.iconLink)}>
+                <FontAwesomeIcon icon={faArrowRightLong} />
+              </span>
             </>
             }
 
