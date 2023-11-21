@@ -30,7 +30,7 @@ export default function Header() {
       <div className={styles.content}>
       <p dangerouslySetInnerHTML={{ __html: headerData.meBlurb }}></p>
 
-        <a href="#" className={styles.resumeLink}>
+        <a href="/Pablo-Diaz-Resume-2023.pdf" className={styles.resumeLink}>
           {headerData.fullResume}
 
           <span>
