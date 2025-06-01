@@ -14,14 +14,13 @@ export default function Home() {
         <div className={styles.aboutMe}>
         <h2>About Me</h2>
         <p dangerouslySetInnerHTML={{ __html: headerData.firstParagraph }}></p>
-        <p dangerouslySetInnerHTML={{ __html: headerData.secondParagraph }}></p>
         </div>
-        <WorkList 
+        {/* <WorkList 
           title="Work"
-          data={workData} />
+          data={workData} /> */}
         
         <WorkList 
-          title="Other Projects"
+          title="Selected Works"
           data={projectsData} />
       </aside>
     </div>

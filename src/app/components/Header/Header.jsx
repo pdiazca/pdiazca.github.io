@@ -2,7 +2,7 @@ import styles from './Header.module.scss'
 import { headerData, socialData } from '../../data.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faCodepen, 
-  faLinkedin, 
+  faInstagram, 
   faBehance } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 
@@ -13,7 +13,7 @@ export default function Header() {
       case "mail": 
         return <FontAwesomeIcon icon={faEnvelope} />
       case "linkedin":
-        return <FontAwesomeIcon icon={faLinkedin} />
+        return <FontAwesomeIcon icon={faInstagram} />
       case "behance":
         return <FontAwesomeIcon icon={faBehance} />
       case "codepen":
@@ -23,20 +23,9 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <h1>
-        {headerData.hi}<br /><span className="highlight">{headerData.name}</span>
-      </h1>
-
+      <h1 dangerouslySetInnerHTML={{ __html: headerData.name }}></h1>
       <div className={styles.content}>
       <p dangerouslySetInnerHTML={{ __html: headerData.meBlurb }}></p>
-
-        <a href="/Pablo-Diaz-Resume-2023.pdf" className={styles.resumeLink}>
-          {headerData.fullResume}
-
-          <span>
-            <FontAwesomeIcon icon={faArrowRightLong} />
-          </span>
-        </a>
       </div>
 
       <ul className={styles.socialLinks}>

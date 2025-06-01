@@ -35,12 +35,12 @@ export default function WorkList({
               isHovered={isHovered}
               isId={isId}
               id={work.id}
-              title={work.title}
-              company={work.company}
-              years={work.years}
+              // title={work.title}
+              // company={work.company}
+              // years={work.years}
               url={work.url}
-              description={work.description}
-              tags={work.tags}
+              // description={work.description}
+              // tags={work.tags}
               key={work.id}
               imagePath={work.imagePath} />
           })
