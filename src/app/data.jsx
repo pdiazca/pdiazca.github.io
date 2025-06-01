@@ -7,15 +7,13 @@ export const headerData =
     secondParagraph: `Outside the internet, I love to play golf, crate digging to extend my vinyl collection and play board games.`,
     meBlurb: `Born in Mexico and currently residing on the unceded traditional territories of the Sḵwx̱wú7mesh Úxwumixw (Squamish Nation), 
     my artistic journey is deeply rooted in the exploration of geometric figures.`,
-    instagram: "@pablodiazart on Instagram",
-    email: "Contact"
   }
 
 export const socialData = [
     {
       id: 1,
       name: "mail",
-      url: "mailto: pdiazart@gmail.me",
+      url: "mailto: hello@pablodiazart.com",
     },
     {
       id: 2,

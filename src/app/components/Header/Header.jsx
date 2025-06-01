@@ -1,10 +1,8 @@
 import styles from './Header.module.scss'
 import { headerData, socialData } from '../../data.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faCodepen, 
-  faInstagram, 
-  faBehance } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
 
@@ -14,10 +12,6 @@ export default function Header() {
         return <FontAwesomeIcon icon={faEnvelope} />
       case "linkedin":
         return <FontAwesomeIcon icon={faInstagram} />
-      case "behance":
-        return <FontAwesomeIcon icon={faBehance} />
-      case "codepen":
-        return <FontAwesomeIcon icon={faCodepen} />
     }
   }
 
